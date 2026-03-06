@@ -1,0 +1,557 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2026"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="This topic exlpains how you can use the guided installation to install the plugin."><meta name="DC.relation" scheme="URI" content="../woo_user_guide/epal_woo_install_guide.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="epal_woo_gd_instl"><title>Installing the ePAL Plugin</title><link rel="stylesheet" type="text/css" href="../commonltr.css"></head><body id="epal_woo_gd_instl"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Installing the ePAL Plugin</h1>
+    
+    <div class="body conbody"><p class="shortdesc">This topic exlpains how you can use the guided installation to install the
+        plugin.</p>
+        <section class="section" id="epal_woo_gd_instl__section_vbv_lkw_23c"><h2 class="title sectiontitle">Prerequisites</h2>
+            
+            <p class="p">You have deployed the plugin as described in the <a class="xref" href="epal_woo_instl_plgn.html" title="This topic explains how to retrieve and upload the plugin and start the guided installation.">Uploading the ePAL Plugin</a> topic.</p>
+            <p class="p">You can create a new user in step 2 of the guided activity or you can sign up for one
+                at the <a class="xref" href="https://app.epalglobal.co/" target="_blank" rel="external noopener">ePAL Dashboard</a> before you start the installation.</p>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_sy5_fld_13c"><h2 class="title sectiontitle">Guided Installation Overview</h2>
+            
+            <p class="p">The plugin's guided installation consists of 7 steps. These are displayed in the
+                header during installation. As you complete each step, the circle around each step
+                changes to green. Blue represents the current step.</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_nfv_rjd_13c"><figcaption><span class="fig--title-label">Figure 1. </span>Installation Steps Overview</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_ofv_rjd_13c" src="../images/epl_stps_ovw.png">
+                </figure>
+            </div>
+            <div class="p">The steps are as follows:<ol class="ol" id="epal_woo_gd_instl__ol_ifd_5kd_13c">
+                    <li class="li"><span class="ph uicontrol">Enable Taxes and Calculations</span>: Enable taxes and
+                        configure some other WooCommerce settings.</li>
+                    <li class="li"><span class="ph uicontrol">API Credentials</span>: Configure your access
+                        credentials.</li>
+                    <li class="li"><span class="ph uicontrol">ePAL Tax Configuration</span>: Configure the ePAL tax
+                        settings.</li>
+                    <li class="li"><span class="ph uicontrol">Shipping Address</span>: Configuring your shipping address.
+                        You can use your store's address if you want to.</li>
+                    <li class="li"><span class="ph uicontrol">Shipping Methods</span>: Configure your shipping
+                        methods.</li>
+                    <li class="li"><span class="ph uicontrol">Shippo OAuth Integration</span>(Optional): Confgure you
+                        OAuth settings for integrations with Shippo. This step is optional.</li>
+                    <li class="li"><span class="ph uicontrol">Product Configuration</span>: You need to generate and
+                        review HS6 codes for your products.</li>
+                </ol></div>
+            <p class="p">To access this guide at anytime, you can amend your WordPress Admin URL with
+                    <code class="ph codeph">/wp-admin/admin.php?page=wc-settings&amp;tab=epal&amp;section=setup</code>
+                to open it. </p>
+            <p class="p">These settings can also be accessed in the ePAL portal.</p>
+            <p class="p">To finish the setup, complete the following steps:</p>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_uws_44z_f3c"><h2 class="title sectiontitle">1. Enable Taxes and Calculations</h2>
+            
+            <p class="p">The first step prompts you to configure the required settings in <em class="ph i">WooCommerce</em>:</p>
+            <p class="p"><img class="image" id="epal_woo_gd_instl__image_bhk_qmn_33c" src="../images/screenshots/epl_woo_step1.png"></p>
+            <p class="p">To open the relevant settings page, you can click <span class="ph uicontrol">Open WooCommerce General
+                    Settings</span>. The following UI is displayed:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_phr_21d_f3c"><figcaption><span class="fig--title-label">Figure 2. </span>Enable Tax UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_qhr_21d_f3c" src="../images/screenshots/epl_woo_enbl_tx.png" alt="Enable Tax UI">
+                </figure>
+            </div>
+            <p class="p">Ensure that the <span class="ph uicontrol">Enable tax rates and calculations</span> checkbox is
+                selected.</p>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_dg4_q4z_f3c"><h2 class="title sectiontitle">2. API Credentials</h2>
+            
+            <p class="p">If you need to, you can create a new ePAL user or you can sign in using an existing
+                one in Step 2:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_iwg_dbd_f3c"><figcaption><span class="fig--title-label">Figure 3. </span>API Credentials UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_jwg_dbd_f3c" src="../images/screenshots/epl_woo_api_config_step2.png" alt="API Credentials UI">
+                </figure>
+            </div>
+            <div class="p">You can proceed in one of the following ways:<ul class="ul" id="epal_woo_gd_instl__ul_wjj_2ct_dhc">
+                    <li class="li">If you have an existing user account from the ePAL portal but have not yet
+                        retrieved your API credentials, you can enter the email and passwoord and
+                        then click <span class="ph uicontrol">Login and Get Credentials</span>. </li>
+                    <li class="li">If you want to sign up for an ePAL account now, complete the
+                            <span class="ph uicontrol">Email</span>, <span class="ph uicontrol">Password</span>,
+                            <span class="ph uicontrol">Full Name</span>, and <span class="ph uicontrol">Company
+                            Name</span> fields. Then click <span class="ph uicontrol">SignUp</span>.</li>
+                    <li class="li">If you have an existing users and have already retrieved your credentials,
+                        you can enter them in the <span class="ph uicontrol">Client ID</span>and
+                            <span class="ph uicontrol">Client Secret</span> fields.</li>
+                </ul></div>
+            <p class="p">Once you have successfully signed in, you may need to reload the page when prompted.
+                After this, the following UI is displayed:</p>
+            <p class="p">IMAGE</p>
+            <p class="p">You can click the <span class="ph uicontrol">Test Connecton</span> button to ensure the
+                connection is working. You can also test your connection to Shippo, if you has been
+                configured.</p>
+            <p class="p">To logout, click <span class="ph uicontrol">Logout</span>.</p>
+        </section>
+        
+        <section class="section" id="epal_woo_gd_instl__section_ktg_s4z_f3c"><h2 class="title sectiontitle">3. Configure Tax Settings</h2>
+            
+            <p class="p">Now, you can configure your WooCommerce tax settings. </p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_uvc_smd_f3c"><figcaption><span class="fig--title-label">Figure 4. </span>Step 3</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_vvc_smd_f3c" src="../images/screenshots/epl_woo_step3.png" alt="Step 3">
+                </figure>
+            </div>
+            <p class="p">To display the following UI, click <span class="ph uicontrol">Open Woo Commerce Tax
+                    Settings</span>:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_tf1_1qw_23c"><figcaption><span class="fig--title-label">Figure 5. </span>ePAL Tax Calculation UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_uf1_1qw_23c" src="../images/screenshots/epl_woo_tx_clc_sttngs.png" alt="ePAL Tax Calculation UI">
+                </figure>
+            </div>
+            <div class="p">Complete the following fields:<table class="table frame-all" id="epal_woo_gd_instl__table_llf_51x_23c"><caption><span class="table--title-label">Table 1. </span><span class="title">ePAL Tax Calculation UI Fields</span></caption><colgroup><col style="width:50%"><col style="width:50%"></colgroup><thead class="thead">
+                            <tr class="row">
+                                <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_llf_51x_23c__entry__1">Field</th>
+                                <th class="entry rowsep-1" id="epal_woo_gd_instl__table_llf_51x_23c__entry__2">Description</th>
+                            </tr>
+                        </thead><tbody class="tbody">
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Prices entered with tax</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <p class="p">If your store uses prices that include tax, select the
+                                            <span class="ph uicontrol"> Yes, I will enter prices inclusive of
+                                            tax</span> radio buttton.</p>
+                                    <p class="p">If your store uses prices that exclude tax, select the
+                                            <span class="ph uicontrol">No, I will enter prices exclusive of
+                                            tax</span> radio buttton.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Calculate tax based on</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <div class="p">To configure the information that is used for tax
+                                        calculation, choose one of the following options: <ul class="ul" id="epal_woo_gd_instl__ul_lnn_zqw_23c">
+                                            <li class="li"><span class="ph uicontrol">Customer shipping address</span>:
+                                                Use the address that the customer provides for
+                                                receiving the goods.</li>
+                                            <li class="li"><span class="ph uicontrol">Customer billing address</span>:Use
+                                                the billing addresss that the customer specified. </li>
+                                            <li class="li"><span class="ph uicontrol">Shop base address</span>: Use the
+                                                store's default address.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Shipping tax class</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">To configure the tax classification that will be used to
+                                    calculate the tax on shipping, choose one of the following
+                                        options:<ul class="ul" id="epal_woo_gd_instl__ul_oyq_4sw_23c">
+                                        <li class="li"><span class="ph uicontrol">Shipping tax class based on the
+                                                cart</span>: Choose this option if you do not
+                                            want to set the behavior and use the default option
+                                            instead. Tax is calculated based ong the goods in the
+                                            transaction.</li>
+                                        <li class="li"><span class="ph uicontrol">Standard</span>: The standard tax rate
+                                            is applied.</li>
+                                        <li class="li"><span class="ph uicontrol">Reduced rate</span>: The reduced tax
+                                            rate is applied.</li>
+                                        <li class="li"><span class="ph uicontrol">Zero rate</span>: A tax rate of zero is
+                                            applied.</li>
+                                    </ul></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Rouding</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <p class="p">If you select the <span class="ph uicontrol">Round tax at subtotal level,
+                                            instead of rounding per line</span> button,
+                                        rounding will be done for each subtotal rather than each
+                                        line.</p>
+                                    <p class="p">If you do not select the button, rounding will continue to be
+                                        done on each line.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Additional Tax Classes</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">You can list any tax classes that you might need but could
+                                    not specify in the <span class="ph uicontrol">Shipping tax class</span>
+                                    setting. You may want to add ones for Reduced and Zero Rated tax
+                                    classes.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Display prices in the shop</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <div class="p">To specify whether you want to display tax inclusive or
+                                        exclusive prices in your store, choose one of the following
+                                            options:<ul class="ul" id="epal_woo_gd_instl__ul_k5y_xzw_23c">
+                                            <li class="li"><span class="ph uicontrol">Including tax</span>: The displayed
+                                                prices include taxes.</li>
+                                            <li class="li"><span class="ph uicontrol">Excluding tax</span>: The displayed
+                                                prices exclude taxes.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Display prices during cart and
+                                        checkout</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <div class="p">To specify whether you want to display tax inclusive or
+                                        exclusive prices in your cart and during checkout, choose
+                                        one of the following options:<ul class="ul" id="epal_woo_gd_instl__ul_qkc_g1x_23c">
+                                            <li class="li"><span class="ph uicontrol">Including tax</span>: The displayed
+                                                prices include taxes.</li>
+                                            <li class="li"><span class="ph uicontrol">Excluding tax</span>: The displayed
+                                                prices exclude taxes.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Price display suffix</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">You can use this to specify a free text suffix for prices.
+                                    For example, you might specify <kbd class="ph userinput">(incl.
+                                        VAT)</kbd> to specify VAT inclusive prices.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__1"><span class="ph uicontrol">Display tax totals</span></td>
+                                <td class="entry" headers="epal_woo_gd_instl__table_llf_51x_23c__entry__2">
+                                    <div class="p">Choose how you want tax totals to display. You can choose
+                                        from one of the following:<ul class="ul" id="epal_woo_gd_instl__ul_pxh_n1x_23c">
+                                            <li class="li"><span class="ph uicontrol">As a single total</span>: Tax is
+                                                displayed in the total&gt;</li>
+                                            <li class="li"><span class="ph uicontrol">Itemized</span>: Tax is displayed
+                                                per item.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                        </tbody></table></div>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_fg1_54z_f3c"><h2 class="title sectiontitle">3. ePAL Tax Configuration</h2>
+            
+            <p class="p">Next, you need to configure the ePAL tax settings that are displayed in the third
+                step:</p>
+            <div class="p">
+                <div class="note caution note_caution" id="epal_woo_gd_instl__note_sr5_grz_f3c"><span class="note__title">CAUTION:</span> <div class="note__body">If you choose price-inclusive prices, you
+                    need to ensure that the tax rates are specified for your products.</div></div>
+            </div>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_c1d_hrz_f3c"><figcaption><span class="fig--title-label">Figure 6. </span>ePAL Tax Configurations Settings UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_d1d_hrz_f3c" src="../images/screenshots/epl_woo_instlr_tx_cnf_stp3.png" alt="ePAL Tax Configurations Settings UI">
+                </figure>
+            </div>
+            <div class="p">Complete the following fields:<table class="table frame-all" id="epal_woo_gd_instl__table_g2p_hrz_f3c"><caption><span class="table--title-label">Table 2. </span><span class="title">ePAL Tax Configuration Settings Ui</span></caption><colgroup><col style="width:50%"><col style="width:50%"></colgroup><thead class="thead">
+                            <tr class="row">
+                                <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1">Field</th>
+                                <th class="entry rowsep-1" id="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">Description</th>
+                            </tr>
+                        </thead><tbody class="tbody">
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Use ePAL</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">
+                                    <div class="note caution note_caution" id="epal_woo_gd_instl__note_h2p_hrz_f3c"><span class="note__title">CAUTION:</span> <div class="note__body">Enabling this setting
+                                        permits ePAL to change your tax and shipping totals wherever
+                                        applicable.</div></div>
+                                    <p class="p">To enable ePAL and permit it to process your transactions,
+                                        you need to select this checkbox</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Digital Goods</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">If you sell digital goods, select this checkbox. ePAL is not
+                                    used for these goods. This setting helps it process mixed
+                                    baskets.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Allow B2B &amp; B2C sales using
+                                    ePAL</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">
+                                    <p class="p">If you want to use ePAL for B2B transactions, click
+                                            <span class="ph uicontrol">Yes</span>. For more information, see
+                                            <a class="xref" href="epal_woo_taxids.html" title="ePAL uses Tax IDs such as VAT IDs to help validate B2B transactions.">B2B and Tax ID Validation</a>.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">VAT Reverse Charge</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">A VAT reverse charged can be applied for B2B transactions.
+                                    You can choose whether this should apply only in the EU, between
+                                    EU-based businesses or the entire world.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Tax ID</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">You can specify your Tax ID. For example, your VAT ID. For
+                                    more information, see <a class="xref" href="epal_woo_taxids.html" title="ePAL uses Tax IDs such as VAT IDs to help validate B2B transactions.">B2B and Tax ID Validation</a>.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">IOSS Number</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">Specify your IOSS number, if applicable. For more
+                                    information, see LINK.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Sync taxid and IOSS with
+                                    portal</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">
+                                    <p class="p">If you click <span class="ph uicontrol">Yes</span>, changes made to your
+                                        Tax ID or IOSS number in Woo Commerce or on the ePAL portal
+                                        are synchronized so both use the updated information. </p>
+                                    <p class="p">If you click <span class="ph uicontrol">No</span>, changes are not
+                                        synchronized.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Show Tax Details Toggle</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">Use this setting to enable or remove the <span class="ph uicontrol">Show Tax
+                                        Details</span> toggle on your checkout. Customers can
+                                    use this to get more information about the taxes and duties that
+                                    ePAL helps calculate.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Cross border ePAL acting zone</span></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">This setting goeverns the countries in which ePAL is enabled.
+                                    To specify for all of Europe, choose
+                                        <span class="ph uicontrol">Europe</span> or you can enter individual
+                                    countries and regions.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__1"><span class="ph uicontrol">Show tax-inclusive price
+                                    suffix</span></td>
+                                <td class="entry" headers="epal_woo_gd_instl__table_g2p_hrz_f3c__entry__2">When enabled, information about tax is displayed in the
+                                    suffix of tax inclusive prices.</td>
+                            </tr>
+                        </tbody></table></div>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_gyq_v4z_f3c"><h2 class="title sectiontitle">4. Shipping Address</h2>
+            
+            <p class="p">You can specify your shipping address and validate it in step 5:</p>
+            <p class="p"><img class="image" id="epal_woo_gd_instl__image_n2r_x4z_f3c" src="../images/screenshots/epl_woo_shpping_addr_step5.png"></p>
+            <p class="p">To add a custom address, click the <span class="ph uicontrol">Add Custom Shipping
+                Address</span>. The following UI displays:</p>
+            <p class="p"><img class="image" id="epal_woo_gd_instl__image_o2r_x4z_f3c" src="../images/Woo_Cst_Addr_Sttng.png" alt="Woo Commerce - Custom Address Setting"></p>
+            <div class="p">Complete the required fields:<table class="table frame-all" id="epal_woo_gd_instl__table_p2r_x4z_f3c"><caption><span class="table--title-label">Table 3. </span><span class="title">Custom Shipping Address Fields</span></caption><colgroup><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"><col style="width:33.33333333333333%"></colgroup><thead class="thead">
+                            <tr class="row">
+                                <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1">Field</th>
+                                <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Mandatory</th>
+                                <th class="entry rowsep-1" id="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Description</th>
+                            </tr>
+                        </thead><tbody class="tbody">
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">First Name*</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Yes</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Specify the first name. This is required.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Last Name*</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Yes</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Specify the last name. This is required.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Company Name</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">No</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Specify the company's name.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Tax ID</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">No</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Specify the Tax ID that is assocuated with this Shipping
+                                    address. </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Address Line 1*</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Yes</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">The first line of your address. This is required.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Address Line 2</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">No</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">The second line of your address. </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">City*</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Yes</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Your city.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">State/Province</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Mandatory for Spain, the United Kingdom of Great Britain and
+                                    Northern Ireland (UK), and Spain.</td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Your state or province.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Postal Code*</span></td>
+                                <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Recommended for all but only mandatory for: <ul class="ul" id="epal_woo_gd_instl__ul_q2r_x4z_f3c">
+                                        <li class="li">Australia</li>
+                                        <li class="li">Brazil</li>
+                                        <li class="li">Canada</li>
+                                        <li class="li">India</li>
+                                        <li class="li">UK</li>
+                                        <li class="li">United States of America</li>
+                                    </ul></td>
+                                <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Your post code. This is required. </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__1"><span class="ph uicontrol">Country*</span></td>
+                                <td class="entry colsep-1" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__2">Yes</td>
+                                <td class="entry" headers="epal_woo_gd_instl__table_p2r_x4z_f3c__entry__3">Your country. This is required.</td>
+                            </tr>
+                        </tbody></table></div>
+            <div class="p">
+                <div class="note note note_note" id="epal_woo_gd_instl__note_yf1_lrz_f3c"><span class="note__title">Note:</span> <div class="note__body">
+                    <p class="p">We recommend that you add Postal Codes for all countries. It is required for
+                        Spain, the United Kingdom of Great Britain and Northern Ireland (UK), and
+                        Spain. You must provide it for these countries.</p>
+                    <div class="p">States or provinces are subdivisions within a country. The following
+                        countries require that you specify the state or subdivision in address
+                            information:<ul class="ul" id="epal_woo_gd_instl__ul_zf1_lrz_f3c">
+                            <li class="li">Australia</li>
+                            <li class="li">Brazil</li>
+                            <li class="li">Canada</li>
+                            <li class="li">India</li>
+                            <li class="li">UK</li>
+                            <li class="li">United States of America</li>
+                        </ul></div>
+                </div></div>
+            </div>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_ymm_y4z_f3c"><h2 class="title sectiontitle">5. Shipping Methods Setup</h2>
+            
+            <p class="p">You need to configure your shipping methods in step 6:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_ry2_fnd_f3c"><figcaption><span class="fig--title-label">Figure 7. </span>Step 6</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_sy2_fnd_f3c" src="../images/screenshots/epl_woo_step6.png" alt="Step 6">
+                </figure>
+            </div>
+            <p class="p">To complete the settings, click <span class="ph uicontrol">Open WooCommerce Shipping
+                    Settings</span>. The following UI is displayed:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_ryp_rnd_f3c"><figcaption><span class="fig--title-label">Figure 8. </span>Shipping Metods UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_syp_rnd_f3c" src="../images/screenshots/epl_woo_shp_mthd_ovw_ui.png" alt="Shipping Metods UI">
+                </figure>
+            </div>
+            <div class="p">
+                <ol class="ol">
+                    <li class="li">You need to configure your shipping methods in step 6:<p class="p">If you are adding a
+                            zone, click <span class="ph uicontrol">Add shipping method</span>.</p><p class="p">If you are
+                            editing an existing zone, click
+                            <span class="ph uicontrol">Edit</span>.</p><p class="p">Repeat this for all the zones where
+                            you want to operate ePAL.</p><p class="p">Click <span class="ph uicontrol">Add Shipping
+                                Method</span>. The folowing UI is displayed:</p><p class="p">SCREEN</p><div class="p">
+                            <ol class="ol" type="a" id="epal_woo_gd_instl__ol_tj2_z2t_yhc">
+                                <li class="li">
+                                    <p class="p">If you are adding a zone, click <span class="ph uicontrol">Add shipping
+                                            method</span>.</p>
+                                    <p class="p">If you are editing an existing zone, click
+                                            <span class="ph uicontrol">Edit</span>.</p>
+                                </li>
+                                <li class="li">Repeat this for all the zones where you want to operate
+                                    ePAL.</li>
+                                <li class="li">Click <span class="ph uicontrol">Add Shipping Method</span>. The folowing
+                                    UI is displayed:</li>
+                                <li class="li">Click <span class="ph uicontrol">ePAL Shipping</span> and click
+                                        <span class="ph uicontrol">Continue</span>.</li>
+                                <li class="li">Complete the Setup UI. Complete the following settings:<table class="table frame-all" id="epal_woo_gd_instl__table_rfd_2jt_yhc"><caption><span class="table--title-label">Table 4. </span><span class="title"></span></caption><colgroup><col style="width:50%"><col style="width:50%"></colgroup><thead class="thead">
+                                                <tr class="row">
+                                                  <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1">Setting</th>
+                                                  <th class="entry rowsep-1" id="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">Description</th>
+                                                </tr>
+                                            </thead><tbody class="tbody">
+                                                <tr class="row">
+                                                  <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1"><span class="ph uicontrol">Enable ePAL
+                                                  Shipping</span></td>
+                                                  <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">You must select this checkbox to enable
+                                                  ePAL for the shipping method.</td>
+                                                </tr>
+                                                <tr class="row">
+                                                  <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1"><span class="ph uicontrol">Method Title</span></td>
+                                                  <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">You can specify a name for this shipping
+                                                  method.</td>
+                                                </tr>
+                                                <tr class="row">
+                                                  <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1"><span class="ph uicontrol">API Timeout</span></td>
+                                                  <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">You can specify the time that can elapse
+                                                  before the API requests are timed out.</td>
+                                                </tr>
+                                                <tr class="row">
+                                                  <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1"><span class="ph uicontrol">Cache
+                                                  Duration</span></td>
+                                                  <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">You can specify the </td>
+                                                </tr>
+                                                <tr class="row">
+                                                  <td class="entry colsep-1" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__1"><span class="ph uicontrol">Debug Mode</span></td>
+                                                  <td class="entry" headers="epal_woo_gd_instl__table_rfd_2jt_yhc__entry__2">To enable debugging, select this
+                                                  checkbox.</td>
+                                                </tr>
+                                            </tbody></table></li>
+                                <li class="li">Click <span class="ph uicontrol">Create and save</span>.</li>
+                                <li class="li">The following UI is displayed:<figure class="fig fignone" id="epal_woo_gd_instl__fig_pzx_3kt_yhc"><figcaption><span class="fig--title-label">Figure 9. </span>ePAL Shipping Method UI</figcaption>
+                                        
+                                        <img class="image" id="epal_woo_gd_instl__image_qzx_3kt_yhc" src="../images/ePAL_Shppng_Mthd_UI.png">
+                                    </figure></li>
+                            </ol>
+                        </div></li>
+                </ol>
+            </div>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_fdl_z4z_f3c"><h2 class="title sectiontitle">6. Shippo OAuth Integration (Optional)</h2>
+            
+            <p class="p">If you are a Shippo customer, you can setup OAuth authentication to help integrate it
+                with ePAL using the following UI:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_gd_instl__fig_yds_hwn_g3c"><figcaption><span class="fig--title-label">Figure 10. </span>Shippo Configuration UI</figcaption>
+                    
+                    <img class="image" id="epal_woo_gd_instl__image_zds_hwn_g3c" src="../images/screenshots/epl_woo_shpp_step7.png" alt="Shippo Configuration UI">
+                </figure>
+            </div>
+            <div class="p">To configure your Shippo connection, complete the following steps:<ol class="ol" id="epal_woo_gd_instl__ol_t5x_nwn_g3c">
+                    <li class="li">Go to the <a class="xref" href="https://app.epalglobal.co/" target="_blank" rel="external noopener">ePAL Dashboard</a>.</li>
+                    <li class="li">Click <span class="ph uicontrol">Providers</span>. The following UI is displayed:<div class="p">
+                            <figure class="fig fignone" id="epal_woo_gd_instl__fig_ull_wwn_g3c"><figcaption><span class="fig--title-label">Figure 11. </span>Providers UI</figcaption>
+                                
+                                <img class="image" id="epal_woo_gd_instl__image_vll_wwn_g3c" src="../images/screenshots/epal_woo_prvdrs_stp7.png" alt="Providers UI">
+                            </figure>
+                        </div></li>
+                    <li class="li">Choose <span class="ph uicontrol">Shippo</span> from the <span class="ph uicontrol">Shipping
+                            Provider</span> field. The following UI is displayed:<div class="p">
+                            <figure class="fig fignone" id="epal_woo_gd_instl__fig_h5p_1xn_g3c"><figcaption><span class="fig--title-label">Figure 12. </span>Shippo Login UI</figcaption>
+                                
+                                <img class="image" id="epal_woo_gd_instl__image_i5p_1xn_g3c" src="../images/screenshots/epl_woo_shppo_loginui.png" alt="Shippo Login UI">
+                            </figure>
+                        </div></li>
+                    <li class="li">Now, open the WooCommerce Setup UI and click <span class="ph uicontrol">Test
+                            Connection</span> to verify that the connection is working. </li>
+                </ol></div>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_nvy_mrz_f3c"><h2 class="title sectiontitle">7. Product Configuration</h2>
+            
+            <p class="p">The final step is to configure your product classification.</p>
+            <ol class="ol" id="epal_woo_gd_instl__ol_q12_rkt_yhc">
+                <li class="li">Click <span class="ph uicontrol">Configure Products</span>.</li>
+                <li class="li">Click <span class="ph uicontrol">Edit Product</span>.</li>
+                <li class="li">Navigate to the <span class="ph uicontrol">Product Data</span> panel:<p class="p"><img class="image" id="epal_woo_gd_instl__image_jbc_2lt_yhc" src="../images/Woo_Prd_Data_Pnl.png"></p></li>
+                <li class="li">Click <span class="ph uicontrol">Make ePAL ready</span>. The following UI is
+                            displayed:<p class="p"><img class="image" id="epal_woo_gd_instl__image_dn3_llt_yhc" src="../images/Woo_epal_rdy_sttngs.png"></p></li>
+                <li class="li">Complete the following settings:<table class="table frame-all" id="epal_woo_gd_instl__table_cw4_mlt_yhc"><caption><span class="table--title-label">Table 5. </span><span class="title"></span></caption><colgroup><col style="width:50%"><col style="width:50%"></colgroup><thead class="thead">
+                                <tr class="row">
+                                    <th class="entry colsep-1 rowsep-1" id="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__1">Setting</th>
+                                    <th class="entry rowsep-1" id="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__2">Description</th>
+                                </tr>
+                            </thead><tbody class="tbody">
+                                <tr class="row">
+                                    <td class="entry colsep-1 rowsep-1" headers="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__1"><span class="ph uicontrol">Product Title</span></td>
+                                    <td class="entry rowsep-1" headers="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__2">Use the product name when looking up the code. </td>
+                                </tr>
+                                <tr class="row">
+                                    <td class="entry colsep-1" headers="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__1"><span class="ph uicontrol">Product Description</span></td>
+                                    <td class="entry" headers="epal_woo_gd_instl__table_cw4_mlt_yhc__entry__2">Include the full version of the product
+                                        description.</td>
+                                </tr>
+                            </tbody></table></li>
+                <li class="li">Click <span class="ph uicontrol">Search</span>. The results are displayed in the panel on
+                    the right hand side:</li>
+                <li class="li">To pick a result, click <span class="ph uicontrol">Select</span>.</li>
+            </ol>
+        </section>
+        <section class="section" id="epal_woo_gd_instl__section_fyn_flw_23c"><h2 class="title sectiontitle">Next Steps</h2>
+            
+            <p class="p">Next, you can test the plugin as descibed in the <a class="xref" href="woo_epal_test.html" title="After you install the plugin, you can test it.">Testing the Plugin</a>
+                topic.</p>
+        </section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../woo_user_guide/epal_woo_install_guide.html" title="This guide provides you with all the information that you need to install ePAL on WooCommerce.">Installation Guide</a></div></div></nav></article></main></body></html>

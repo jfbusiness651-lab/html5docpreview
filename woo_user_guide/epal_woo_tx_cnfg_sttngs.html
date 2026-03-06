@@ -1,0 +1,137 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2026"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="You can use the ePAL Tax Calculation UI to confure how ePAL interacts with your tax settings in WooCommerce"><meta name="DC.relation" scheme="URI" content="../woo_user_guide/epal_woo_ntv_sttngs.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="epa_woo_tx_cnfg_sttngs"><title>ePAL Tax Calculation UI</title><link rel="stylesheet" type="text/css" href="../commonltr.css"></head><body id="epa_woo_tx_cnfg_sttngs"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">ePAL Tax Calculation UI</h1>
+    
+    <div class="body conbody"><p class="shortdesc">You can use the <span class="ph uicontrol">ePAL Tax Calculation</span> UI to confure how ePAL
+        interacts with your tax settings in <em class="ph i">WooCommerce</em></p>
+        <p class="p">This UI gathers relevant settings from <em class="ph i">WooCommerce</em> and displays them
+            alongside relevant ePAL settings.</p>
+        <p class="p">You can access this UI from step 1 in the guided installation. This is explained in the
+                <a class="xref" href="epal_woo_gd_instl.html" title="This topic exlpains how you can use the guided installation to install the plugin.">Installing the ePAL Plugin</a> topic</p>
+        <p class="p">To open this UI, go to <span class="ph menucascade"><span class="ph uicontrol">WooCommerce</span><abbr title="and then"> &gt; </abbr><span class="ph uicontrol">Tax</span></span>. The following UI is displayed:</p>
+        <div class="p">
+            <figure class="fig fignone" id="epa_woo_tx_cnfg_sttngs__fig_tf1_1qw_23c"><figcaption><span class="fig--title-label">Figure 1. </span>ePAL Tax Calculation UI</figcaption>
+                
+                <img class="image" id="epa_woo_tx_cnfg_sttngs__image_uf1_1qw_23c" src="../images/screenshots/epl_woo_tx_clc_sttngs.png" alt="ePAL Tax Calculation UI">
+            </figure>
+        </div>
+        <section class="section" id="epa_woo_tx_cnfg_sttngs__section_hd1_rpw_23c"><h2 class="title sectiontitle">UI Fields</h2>
+            
+            <div class="p">This UI contains the following fields:<table class="table frame-all" id="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c"><caption><span class="table--title-label">Table 1. </span><span class="title">ePAL Tax Calculation UI Fields</span></caption><colgroup><col style="width:50%"><col style="width:50%"></colgroup><thead class="thead">
+                            <tr class="row">
+                                <th class="entry colsep-1 rowsep-1" id="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1">Field</th>
+                                <th class="entry rowsep-1" id="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">Description</th>
+                            </tr>
+                        </thead><tbody class="tbody">
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Prices entered with tax</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <p class="p">If your store uses prices that include tax, select the
+                                            <span class="ph uicontrol"> Yes, I will enter prices inclusive of
+                                            tax</span> radio buttton.</p>
+                                    <p class="p">If your store uses prices that exclude tax, select the
+                                            <span class="ph uicontrol">No, I will enter prices exclusive of
+                                            tax</span> radio buttton.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Calculate tax based on</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <div class="p">To configure the information that is used for tax
+                                        calculation, choose one of the following options: <ul class="ul" id="epa_woo_tx_cnfg_sttngs__ul_lnn_zqw_23c">
+                                            <li class="li"><span class="ph uicontrol">Customer shipping address</span>:
+                                                Use the address that the customer provides for
+                                                receiving the goods.</li>
+                                            <li class="li"><span class="ph uicontrol">Customer billing address</span>:Use
+                                                the billing addresss that the customer specified. </li>
+                                            <li class="li"><span class="ph uicontrol">Shop base address</span>: Use the
+                                                store's default address.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Shipping tax class</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">To configure the tax classification that will be used to
+                                    calculate the tax on shipping, choose one of the following
+                                        options:<ul class="ul" id="epa_woo_tx_cnfg_sttngs__ul_oyq_4sw_23c">
+                                        <li class="li"><span class="ph uicontrol">Shipping tax class based on the
+                                                cart</span>: Choose this option if you do not
+                                            want to set the behavior and use the default option
+                                            instead. Tax is calculated based ong the goods in the
+                                            transaction.</li>
+                                        <li class="li"><span class="ph uicontrol">Standard</span>: The standard tax rate
+                                            is applied.</li>
+                                        <li class="li"><span class="ph uicontrol">Reduced rate</span>: The reduced tax
+                                            rate is applied.</li>
+                                        <li class="li"><span class="ph uicontrol">Zero rate</span>: A tax rate of zero is
+                                            applied.</li>
+                                    </ul></td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Rouding</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <p class="p">If you select the <span class="ph uicontrol">Round tax at subtotal level,
+                                            instead of rounding per line</span> button,
+                                        rounding will be done for each subtotal rather than each
+                                        line.</p>
+                                    <p class="p">If you do not select the button, rounding will continue to be
+                                        done on each line.</p>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Additional Tax Classes</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">You can list any tax classes that you might need but could
+                                    not specify in the <span class="ph uicontrol">Shipping tax class</span>
+                                    setting. You may want to add ones for Reduced and Zero Rated tax
+                                    classes.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Display prices in the shop</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <div class="p">To specify whether you want to display tax inclusive or
+                                        exclusive prices in your store, choose one of the following
+                                            options:<ul class="ul" id="epa_woo_tx_cnfg_sttngs__ul_k5y_xzw_23c">
+                                            <li class="li"><span class="ph uicontrol">Including tax</span>: The displayed
+                                                prices include taxes.</li>
+                                            <li class="li"><span class="ph uicontrol">Excluding tax</span>: The displayed
+                                                prices exclude taxes.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Display prices during cart and
+                                        checkout</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <div class="p">To specify whether you want to display tax inclusive or
+                                        exclusive prices in your cart and during checkout, choose
+                                        one of the following options:<ul class="ul" id="epa_woo_tx_cnfg_sttngs__ul_qkc_g1x_23c">
+                                            <li class="li"><span class="ph uicontrol">Including tax</span>: The displayed
+                                                prices include taxes.</li>
+                                            <li class="li"><span class="ph uicontrol">Excluding tax</span>: The displayed
+                                                prices exclude taxes.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1 rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Price display suffix</span></td>
+                                <td class="entry rowsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">You can use this to specify a free text suffix for prices.
+                                    For example, you might specify <kbd class="ph userinput">(incl.
+                                        VAT)</kbd> to specify VAT inclusive prices.</td>
+                            </tr>
+                            <tr class="row">
+                                <td class="entry colsep-1" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__1"><span class="ph uicontrol">Display tax totals</span></td>
+                                <td class="entry" headers="epa_woo_tx_cnfg_sttngs__table_qtx_spw_23c__entry__2">
+                                    <div class="p">Choose how you want tax totals to display. You can choose
+                                        from one of the following:<ul class="ul" id="epa_woo_tx_cnfg_sttngs__ul_pxh_n1x_23c">
+                                            <li class="li"><span class="ph uicontrol">As a single total</span>: Tax is
+                                                displayed in the total&gt;</li>
+                                            <li class="li"><span class="ph uicontrol">Itemized</span>: Tax is displayed
+                                                per item.</li>
+                                        </ul></div>
+                                </td>
+                            </tr>
+                        </tbody></table></div>
+        </section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../woo_user_guide/epal_woo_ntv_sttngs.html" title="This guide serves as a reference that lists all the relevants UIs and other resources.">Reference Guide</a></div></div></nav></article></main></body></html>

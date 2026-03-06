@@ -1,0 +1,101 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2026"><meta name="copyright" content="(C) Copyright 2026"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="concept"><meta name="description" content="This topic explains how ePAL integrates with the order processing flow in WooCommerce from purchase to shipping."><meta name="DC.relation" scheme="URI" content="../woo_user_guide/epal_woo_ovw.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="epal_woo_order_processing"><title>How does ePAL Work?</title><link rel="stylesheet" type="text/css" href="../commonltr.css"></head><body id="epal_woo_order_processing"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">How does ePAL Work?</h1>
+    
+    <div class="body conbody"><p class="shortdesc">This topic explains how ePAL integrates with the order processing flow in <em class="ph i">WooCommerce</em> from purchase to
+        shipping.</p>
+        <p class="p">This example uses the ePAL demo store. You can visit it here.</p>
+        <p class="p">This examples walks through a typical buyer scenario where the they purchase a good,
+            highlighting where ePAL helps in this process.</p>
+        <p class="p">The example is divided into 2 parts, showing an example flow for purchasing and
+            fulfilment so you can see how ePAL helps the buyer and the seller from their
+            perspectives.</p>
+        <section class="section" id="epal_woo_order_processing__section_vw4_gwl_k3c"><h2 class="title sectiontitle">Assumptions</h2>
+            
+            <div class="p">The following assumptions have been made:<ul class="ul" id="epal_woo_order_processing__ul_n5p_hwl_k3c">
+                    <li class="li">This scenario is a B2C transaction where the buyer is in the European Union
+                        (EU) (Ireland) and the seller is based in the United States of America
+                        (USA).</li>
+                    <li class="li">The merchant has configured their <em class="ph i">WooCommerce</em> store
+                        to use real-time tax rates from ePAL.</li>
+                </ul></div>
+        </section>
+        <section class="section" id="epal_woo_order_processing__section_gpf_hsz_f3c"><h2 class="title sectiontitle">Buyer's Steps (Purchasing)</h2>
+            
+            <p class="p">The following graphic represents the steps in a typical purchasing scenario, from the
+                buyer's perspective. It also highlights where ePAL helps in this processs:</p>
+            <div class="p">
+                <figure class="fig fignone" id="epal_woo_order_processing__fig_ep5_1xl_k3c"><figcaption><span class="fig--title-label">Figure 1. </span>Buyer Process Flow</figcaption>
+                    
+                    <img class="image" id="epal_woo_order_processing__image_fp5_1xl_k3c" src="../images/graphics/epal_woo_prcs_flw_byr.png" alt="Buyer Process Flow">
+                </figure>
+            </div>
+            <div class="p">The steps are as follows:<ol class="ol" id="epal_woo_order_processing__ol_xqj_53l_k3c">
+                    <li class="li">A buyer views the goods in the <em class="ph i">WooCommerce</em>Store. <div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_n1y_tjl_k3c"><figcaption><span class="fig--title-label">Figure 2. </span>Product Page</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_o1y_tjl_k3c" src="../images/screenshots/epl_woo_prcsflw_1.png" alt="Product Page">
+                            </figure>
+                        </div><p class="p"><strong class="ph b">ePAL</strong>: When the buyer views the goods, the estimated tax is
+                            displayed. Here, ePAL retrieves the tax rate per your settings and makes
+                            it available for the users to view.</p></li>
+                    <li class="li">The buyer decides to make a purchase and adds the good to their checkout by
+                        clicking <span class="ph uicontrol">Add to cart</span>.<div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_tvj_qkl_k3c"><figcaption><span class="fig--title-label">Figure 3. </span>Goods added to cart</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_uvj_qkl_k3c" src="../images/screenshots/epl_woo_prcsflw_2.png" alt="Goods added to cart">
+                            </figure>
+                        </div></li>
+                    <li class="li">They click <span class="ph uicontrol">View Cart</span> to proceed with the purchase.<div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_y5j_fll_k3c"><figcaption><span class="fig--title-label">Figure 4. </span>Cart Details</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_z5j_fll_k3c" src="../images/screenshots/epl_woo_prcsflw_3.png" alt="Cart Details">
+                            </figure>
+                        </div><p class="p"><strong class="ph b">ePAL</strong>: Here, ePAL provides details about the indirect tax, the
+                            customs duty, as well as tax on duty and shipping. This ensures the most
+                            accurate fully landed costs.</p></li>
+                    <li class="li">The buyer takes time to review the details for tax, shipping and other details.<div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_cb5_5ll_k3c"><figcaption><span class="fig--title-label">Figure 5. </span>Review details</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_db5_5ll_k3c" src="../images/screenshots/epl_woo_prcsflw_4.png" alt="Review details">
+                            </figure>
+                        </div></li>
+                    <li class="li">They are ready to purchase and click <span class="ph uicontrol">Proceed to
+                            Checkout</span>.<div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_thd_4nl_k3c"><figcaption><span class="fig--title-label">Figure 6. </span>Checkout</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_uhd_4nl_k3c" src="../images/screenshots/epl_woo_prcsflw_5.png" alt="Checkout">
+                            </figure>
+                        </div><p class="p"><strong class="ph b">ePAL</strong>: ePAL provides final rates for tax and customs as well as
+                            tax on shipping and customs duty. This is the information that will be
+                            used for the order details in the store and on invoices.</p></li>
+                    <li class="li">After placing the order, they can review the order details, including the
+                        tax and customs duty information.<div class="p">
+                            <figure class="fig fignone" id="epal_woo_order_processing__fig_a4f_p4l_k3c"><figcaption><span class="fig--title-label">Figure 7. </span>Order Details</figcaption>
+                                
+                                <img class="image" id="epal_woo_order_processing__image_b4f_p4l_k3c" src="../images/screenshots/epl_woo_prcsflw_6.png" alt="Order Details">
+                            </figure>
+                        </div></li>
+                    <li class="li">The buyer receives a mail confirming the order.</li>
+                    <li class="li">The buyer receives the goods.<p class="p"><strong class="ph b">ePAL</strong>: ePAL helps ensure that the
+                            shipping label contains all the details needed for fully landed costs,
+                            ensuring the buyer receives their goods quickly and without the need for
+                            any further intervention to pay outstanding custom duties.</p></li>
+                </ol></div>
+        </section>
+        <section class="section" id="epal_woo_order_processing__section_ory_bwl_k3c"><h2 class="title sectiontitle">Merchant's Steps (Fulfilment)</h2>
+            
+            <p class="p">The following graphic represents the steps in a typical fulflilment scenario, from
+                the seller's perspective. It also highlights where ePAL helps in this processs:</p>
+            <p class="p"></p>
+            <div class="p">The steps are as follows:<ol class="ol" id="epal_woo_order_processing__ol_o3n_v3m_k3c">
+                    <li class="li">The merchant receives the order.</li>
+                    <li class="li">They approve it in <em class="ph i">WooCommerce</em>.</li>
+                    <li class="li">They generate a shipping label.</li>
+                    <li class="li">They fulfiull the order, sending an invoice to the buyer and preparing the
+                        goods for shipping.<p class="p"><strong class="ph b">ePAL</strong>:</p></li>
+                </ol></div>
+        </section>
+    </div>
+<nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../woo_user_guide/epal_woo_ovw.html" title="Read about how to install the ePAL plugin for WooCommerce.">Getting Started with the ePAL WooCommerce Plugin</a></div></div></nav></article></main></body></html>
